@@ -42,13 +42,13 @@ class TestCollatz (TestCase):
     def test_read_3(self):
         s = "-1 -10\n"
         i, j = collatz_read(s)
-        self.assertEqual(i,  -1)
-        self.assertEqual(j, -10)
+        self.assertEqual(i, 0)
+        self.assertEqual(j, 0)
     
     def test_read_4(self):
         s = "10 1\n"
         i, j = collatz_read(s)
-        self.assertEqual(i,  10)
+        self.assertEqual(i, 10)
         self.assertEqual(j, 1)
 
     # ----
@@ -100,7 +100,7 @@ class TestCollatz (TestCase):
     def test_print_3(self):
         w = StringIO()
         collatz_print(w, 10000, 100000, 1)
-        self.assertEqual(w.getvalue(), "100000 1000000 1\n")
+        self.assertEqual(w.getvalue(), "10000 100000 1\n")
     
     def test_print_4(self):
         w = StringIO()
@@ -130,7 +130,7 @@ class TestCollatz (TestCase):
         w = StringIO()
         collatz_solve(r, w)
         self.assertEqual(
-            w.getvalue(), "-1 10 0\n-100 200 0\n")
+            w.getvalue(), "0 0 0\n0 0 0\n")
     
     def test_solve_4(self):
         r = StringIO("1\n100\n")
