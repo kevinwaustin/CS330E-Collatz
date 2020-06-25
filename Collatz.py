@@ -17,8 +17,13 @@ def collatz_read(s):
     s a string
     return a list of two ints, representing the beginning and end of a range, [i, j]
     """
+    if not s.replace(" ", "").isdigit():
+        return [0, 0]
     a = s.split()
-    return [int(a[0]), int(a[1])]
+    if len(a) > 1:
+        return [int(a[0]), int(a[1])]
+    else:
+        return [int(a[0]), 0]
 
 # ------------
 # collatz_eval
@@ -31,8 +36,27 @@ def collatz_eval(i, j):
     j the end       of the range, inclusive
     return the max cycle length of the range [i, j]
     """
-    # <your code>
-    return 1
+    return recursive_max(i, j, 0)
+
+def recursive_max(i, j, max):
+    if i <= 0 or j <= 0:
+        return 0
+    num = i
+    count = 1
+    while num > 1:
+        if num % 2 == 0:
+            num /= 2
+        else:
+            num = 3 * num + 1
+        count += 1
+    if count > max:
+        max = count
+    if i == j:
+        return max
+    if i < j:
+        return recursive_max(i + 1, j, max)
+    if i > j:
+        return recursive_max(i - 1, j, max)
 
 # -------------
 # collatz_print
