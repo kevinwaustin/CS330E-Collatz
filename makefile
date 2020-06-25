@@ -9,7 +9,6 @@ FILES :=                              \
     RunCollatz.py                     \
     TestCollatz.out                   \
     TestCollatz.py                    \
-
     cs330e-collatz-tests/kevinw.austin-RunCollatz.in   \
     cs330e-collatz-tests/kevinw.austin-RunCollatz.out  \
     cs330e-collatz-tests/kevinw.austin-TestCollatz.out \
