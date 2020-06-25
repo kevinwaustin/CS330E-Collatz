@@ -1,3 +1,33 @@
+commit a02732014187b10bced0d430d48ae072b66d5b3b
+Author: “Kevin <kevinw.austin@utexas.edu>
+Date:   Thu Jun 25 17:30:03 2020 -0500
+
+    adding comments to Collatz.py
+
+commit 39a3e1c99b9f600c29f6e1b6181fc2bc572d24ec
+Author: “Kevin <kevinw.austin@utexas.edu>
+Date:   Thu Jun 25 16:46:00 2020 -0500
+
+    removed extra line causing bug in makefile
+
+commit a052d2932643ee7b9693786480986ed719ba2f2a
+Author: “Kevin <kevinw.austin@utexas.edu>
+Date:   Thu Jun 25 16:43:31 2020 -0500
+
+    added missing '\' to makefile
+
+commit 93c2b735fb806b6c50d0716f94ef240874305719
+Author: “Kevin <kevinw.austin@utexas.edu>
+Date:   Thu Jun 25 16:41:11 2020 -0500
+
+    uncommenting lines in makefile for phase 3
+
+commit 673aad6595077df73ff4b5bf5837c4480e375199
+Author: Kevin Wang <kmw4287@cs.utexas.edu>
+Date:   Thu Jun 25 16:13:58 2020 -0500
+
+    Phase 3 optimized commit
+
 commit e4b49703b6972ed83b7dfaa405e709a7251c60dc
 Merge: 43bf523 9d5dec0
 Author: Kevin M Wang <kevinw.austin@utexas.edu>
