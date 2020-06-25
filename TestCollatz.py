@@ -91,6 +91,21 @@ class TestCollatz (TestCase):
         w = StringIO()
         collatz_print(w, 1, 10, 20)
         self.assertEqual(w.getvalue(), "1 10 20\n")
+    
+    def test_print_2(self):
+        w = StringIO()
+        collatz_print(w, -1, -10, 0)
+        self.assertEqual(w.getvalue(), "-1 -10 0\n")
+    
+    def test_print_3(self):
+        w = StringIO()
+        collatz_print(w, 10000, 100000, 1)
+        self.assertEqual(w.getvalue(), "100000 1000000 1\n")
+    
+    def test_print_4(self):
+        w = StringIO()
+        collatz_print(w, 10, 1, -111)
+        self.assertEqual(w.getvalue(), "10 1 -111\n")
 
     # -----
     # solve
