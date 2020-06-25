@@ -45,12 +45,17 @@ def collatz_eval(i, j):
 def recursive_max(memo, i, j, max):
     if i <= 0 or j <= 0:
         return 0
+    if i in memo:
+        if i == j:
+            return max
+        if i < j:
+            return recursive_max(memo, i + 1, j, max)
+        if i > j:
+            return recursive_max(memo, i - 1, j, max)
     num = i
     count = 1
     while num > 1:
-        if num in memo:
-            break
-        else:
+        if not (num in memo):
             memo.append(num)
         if num % 2 == 0:
             num /= 2
