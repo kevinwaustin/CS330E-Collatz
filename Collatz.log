@@ -1,3 +1,52 @@
+commit e4b49703b6972ed83b7dfaa405e709a7251c60dc
+Merge: 43bf523 9d5dec0
+Author: Kevin M Wang <kevinw.austin@utexas.edu>
+Date:   Thu Jun 25 21:11:57 2020 +0000
+
+    Merge branch 'revert-43bf5234' into 'dev'
+    
+    Revert "readded acceptance test for RunCollatz that exceeded maximum recursion...
+    
+    See merge request kevinw.austin/collatz!2
+
+commit 9d5dec0e109042b7446cdfe7113b96227afd7f55
+Author: Kevin M Wang <kevinw.austin@utexas.edu>
+Date:   Thu Jun 25 21:11:16 2020 +0000
+
+    Revert "readded acceptance test for RunCollatz that exceeded maximum recursion depth prior to optimization"
+    
+    This reverts commit 43bf523421059b4d837221643f68dcff7a582288
+
+commit 43bf523421059b4d837221643f68dcff7a582288
+Author: “Kevin <kevinw.austin@utexas.edu>
+Date:   Thu Jun 25 16:09:06 2020 -0500
+
+    readded acceptance test for RunCollatz that exceeded maximum recursion depth prior to optimization
+
+commit 5df8095904fa9b1a884588e2e36f55cd7c988b8f
+Author: “Kevin <kevinw.austin@utexas.edu>
+Date:   Thu Jun 25 15:57:40 2020 -0500
+
+    fixed issue with memoization of collatz_eval function - memo was interfering with cycle length counter
+
+commit d1c4e1b107739622c985362d41ddce4abbc8ea6b
+Author: “Kevin <kevinw.austin@utexas.edu>
+Date:   Thu Jun 25 15:51:06 2020 -0500
+
+    fixed bug in collatz_eval helper function, did not update arguments after optimization
+
+commit 2d66bb40d943aa556c62da8cebdc2b071426b76a
+Author: “Kevin <kevinw.austin@utexas.edu>
+Date:   Thu Jun 25 15:47:59 2020 -0500
+
+    optimization of collatz_eval method using memoization to reduce computation time for recursion
+
+commit 7abdf065c96a695247b07b7951aea85779d5b304
+Author: Kevin Wang <kmw4287@cs.utexas.edu>
+Date:   Thu Jun 25 15:39:45 2020 -0500
+
+    phase 2 final commit
+
 commit 434bc2154771876fcd7cbca929dfb52ca7f59c43
 Author: “Kevin <kevinw.austin@utexas.edu>
 Date:   Thu Jun 25 15:32:52 2020 -0500
