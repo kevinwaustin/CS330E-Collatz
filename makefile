@@ -8,7 +8,7 @@ FILES :=                              \
     RunCollatz.out                    \
     RunCollatz.py                     \
     TestCollatz.out                   \
-    TestCollatz.py
+    TestCollatz.py                    \
 
     cs330e-collatz-tests/kevinw.austin-RunCollatz.in   \
     cs330e-collatz-tests/kevinw.austin-RunCollatz.out  \
