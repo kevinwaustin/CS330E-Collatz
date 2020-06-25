@@ -17,13 +17,16 @@ def collatz_read(s):
     s a string
     return a list of two ints, representing the beginning and end of a range, [i, j]
     """
-    if not s.replace(" ", "").isdigit():
-        return [0, 0]
     a = s.split()
     if len(a) > 1:
-        return [int(a[0]), int(a[1])]
+        if a[0].isdigit() and a[1].isdigit():
+            return [int(a[0]), int(a[1])]
+        else:
+            return [0, 0]
     else:
-        return [int(a[0]), 0]
+        if a[0].isdigit():
+            return [int(a[0]), 0]
+        return [0, 0]
 
 # ------------
 # collatz_eval
