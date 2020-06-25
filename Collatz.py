@@ -39,18 +39,18 @@ def collatz_eval(i, j):
     j the end       of the range, inclusive
     return the max cycle length of the range [i, j]
     """
-    memo = []
+    memo = []           # blank list for memo creation
     return recursive_max(memo, i, j, 0)
 
-def recursive_max(memo, i, j, max):
-    if i <= 0 or j <= 0:
+def recursive_max(memo, i, j, max): # helper function for collatz_eval; uses memoized recursion
+    if i <= 0 or j <= 0:            # returns error value of 0 for invalid input
         return 0
-    if i in memo:
+    if i in memo:                   # skips cycle calculation if value is in memo
         if i == j:
             return max
-        if i < j:
+        if i < j:                   # recurses to next int value if range in standard order
             return recursive_max(memo, i + 1, j, max)
-        if i > j:
+        if i > j:                   # recurses to previous int if range in reverse order
             return recursive_max(memo, i - 1, j, max)
     num = i
     count = 1
