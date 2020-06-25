@@ -1,3 +1,69 @@
+commit 434bc2154771876fcd7cbca929dfb52ca7f59c43
+Author: “Kevin <kevinw.austin@utexas.edu>
+Date:   Thu Jun 25 15:32:52 2020 -0500
+
+    removed test cases from RunCollatz that exceed recursion depth limit
+
+commit d2070d8ea6f08ae61580ec399e35a70523b23525
+Author: “Kevin <kevinw.austin@utexas.edu>
+Date:   Thu Jun 25 15:28:30 2020 -0500
+
+    created ~100 more lines of acceptance tests for RunCollatz including several corner cases to ensure code functionality
+
+commit b49f8a44148cb78b2f399152be819c7beba16134
+Author: “Kevin <kevinw.austin@utexas.edu>
+Date:   Thu Jun 25 15:14:11 2020 -0500
+
+    fixed expected values for some failed unit tests to account for changes in Collatz.py
+
+commit 7f238dc4958c360fd2c16c897635817336f749ae
+Author: “Kevin <kevinw.austin@utexas.edu>
+Date:   Thu Jun 25 14:54:14 2020 -0500
+
+    updated expected values for RunCollatz output
+
+commit f5da92c1d68f044feb1ca0b8f29eca165a00d08a
+Author: “Kevin <kevinw.austin@utexas.edu>
+Date:   Thu Jun 25 14:49:48 2020 -0500
+
+    fixed issues with reading improper input
+
+commit 00a00eea9c73afd071a85ef34b96cfa10bf90863
+Author: “Kevin <kevinw.austin@utexas.edu>
+Date:   Thu Jun 25 14:34:01 2020 -0500
+
+    modified Collatz.py to generate correct expected output
+
+commit 336c6d42d7e4440133ad4d61f4295480d466241f
+Author: “Kevin <kevinw.austin@utexas.edu>
+Date:   Thu Jun 25 14:15:38 2020 -0500
+
+    added new unit tests for collatz_solve edge cases
+
+commit fd11d539193ed195c15224048ecca2463a064eeb
+Author: “Kevin <kevinw.austin@utexas.edu>
+Date:   Thu Jun 25 14:08:38 2020 -0500
+
+    added new unit tests for collatz_print edge cases
+
+commit 33edc9ed8a902588a04015149b5e50f282dba3ce
+Author: “Kevin <kevinw.austin@utexas.edu>
+Date:   Thu Jun 25 13:54:43 2020 -0500
+
+    updated test_eval cases with correct expected values and additional edge case tests
+
+commit c40e95b904b8a9a2be09b202cc1b3a3a1da4a34b
+Author: “Kevin <kevinw.austin@utexas.edu>
+Date:   Thu Jun 25 13:23:54 2020 -0500
+
+    Added 3 new unit tests for collatz_read edge cases
+
+commit 2ed41f73a56b9de12a07a09f474dee7f53e61aee
+Author: Kevin Wang <kmw4287@cs.utexas.edu>
+Date:   Thu Jun 25 01:50:13 2020 -0500
+
+    Phase 1 maketest output
+
 commit 45a3cbe33c6dfe7a910e989af9ed781ec5abbe33
 Author: Fares Fraij <fares@utexas.edu>
 Date:   Sat Jun 6 10:35:45 2020 -0500
