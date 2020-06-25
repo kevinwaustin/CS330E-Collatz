@@ -10,11 +10,11 @@ FILES :=                              \
     TestCollatz.out                   \
     TestCollatz.py
 
-#    cs330e-collatz-tests/YourGitLabID-RunCollatz.in   \
-#    cs330e-collatz-tests/YourGitLabID-RunCollatz.out  \
-#    cs330e-collatz-tests/YourGitLabID-TestCollatz.out \
-#    cs330e-collatz-tests/YourGitLabID-TestCollatz.py  \
-#
+    cs330e-collatz-tests/kevinw.austin-RunCollatz.in   \
+    cs330e-collatz-tests/kevinw.austin-RunCollatz.out  \
+    cs330e-collatz-tests/kevinw.austin-TestCollatz.out \
+    cs330e-collatz-tests/kevinw.austin-TestCollatz.py  \
+
 
 ifeq ($(shell uname), Darwin)          # Apple
     PYTHON   := python3
