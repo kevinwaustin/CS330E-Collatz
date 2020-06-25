@@ -42,7 +42,7 @@ def collatz_eval(i, j):
     memo = []
     return recursive_max(memo, i, j, 0)
 
-def recursive_max(i, j, max):
+def recursive_max(memo, i, j, max):
     if i <= 0 or j <= 0:
         return 0
     num = i
